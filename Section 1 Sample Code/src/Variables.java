@@ -21,6 +21,20 @@ public class Variables {
 		char initial = 'E'; // value enclosed in single quotes 'E'
 		boolean isValid = false;
 		String name = ""; // value enclosed in double quotes ""
+		
+		/*	All primitive types have a type wrapper class
+		 	--------------------------------------
+		 	Byte, Short, Integer, Long
+		 	Float, Double
+		 	Character
+		 	Boolean
+		 	
+		 	These type wrappers are used to convert between types and also parse strings into their corresponding
+		 	primitive data type
+		 */
+		
+		age = Integer.parseInt("35");
+		isValid = Boolean.parseBoolean("true");
 
 	}
 
