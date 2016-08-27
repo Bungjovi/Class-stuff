@@ -16,6 +16,9 @@ public class ConsoleIO {
 		System.out.print("Enter in age: ");
 		int age = Integer.parseInt(scanner.nextLine());
 		
+		
+		String text = String.format("Your name is %s. You are %d years old.", firstName, age);
+		System.out.println(text);
 		// Close the scanner before ending the entire application to prevent IO handle attachment issues.
 		scanner.close(); 
 	}
