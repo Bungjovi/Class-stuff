@@ -1,9 +1,11 @@
+import javax.swing.JOptionPane;
 
 public class GraphicalIO {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
+		
+		
+		System.exit(0);
 	}
 
 }
