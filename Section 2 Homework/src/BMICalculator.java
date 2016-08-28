@@ -6,12 +6,12 @@
 	
 	Use the 4 categories below to to determine the output.
 	
-	BMI				Category
+	BMI			Category
 	-----------------------------------
 	< 18.5			Under Weight
 	18.5 - 24.9		Normal
 	25.0 - 29.9		Overweight
-	30.0 or more	Obese
+	30.0 or more		Obese
 	-----------------------------------
  */
 
