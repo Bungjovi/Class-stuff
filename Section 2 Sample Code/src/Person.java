@@ -53,6 +53,7 @@ public class Person {
 	 * @param ln Represents the Person's Last Name
 	 */
 	public Person(String fn, String ln) {
-		
+		firstName = fn;
+		lastName = ln;
 	}
 }
