@@ -9,20 +9,13 @@ public class Track {
 	
 	public static Scanner scanner = new Scanner(System.in);
 	
+	public static void main(String[] args) {
+	
 	// TODO create variables for the following fields: 
-	// track number
 	private int trackNum;
-	
-	// title
 	private String title;
-	
-	// artist
 	private String artist;
-	
-	// duration ( in seconds ),
 	private int duration;
-	
-	// bit rate ( acceptable values are 128 kbps, 160 Kbps, 192 Kbps, 256 Kbps, 320 Kbps )
 	private int bitRate;
 	
 	
@@ -50,32 +43,57 @@ public class Track {
 		System.out.println("Enter the bit rate of the track: ");
 		
 	}
-	
+		
 	
 	// TODO when assigning a bit rate make sure it ends up as one of the acceptable values
-	int v = 128;
-	int w = 160;
-	int x = 192;
-	int y = 256;
-	int z = 320;
+	
 	// If the number is > 128 but < 160 it should be assigned 128, like wise for 160 - 191, 193 - 255,
 	// and 257 - 319
-	public void Rate() {
+	public void Rate(); {
+		
+		
 	
-	if (bitRate <= v && bitRate >= w){
-		System.out.println("Good");
+	if (bitRate <= 127 && bitRate >= 159){
+		System.out.println("128");
 	}
-	else if (bitRate <= x && bitRate >= y){
-		System.out.println("Better");
+	else if (bitRate <= 160 && bitRate >= 191){
+		return v + String.format("Kpbs Quality is ");
 	}
-	else {
-		System.out.println("Best");
+	else if (bitRate <= 192 && bitRate >= 255){
+		System.out.println("192");
 	}
+	else if (bitRate <= 256 && bitRate >= 319){
+		System.out.println("256");
+	}
+	else
+	{	System.out.println("320");}
 	}
 	// TODO create a function that returns a string rating of the bit rate
 	// 128, 160 = "Good"
 	// 192, 256 = "Better"
 	// 320 = "Best
+	
+	public static String Quality(int bitRate) {
+		
+		int v = 128;
+		int w = 160;
+		int x = 192;
+		int y = 256;
+		int z = 320;
+		
+		if (bitRate <= 127 && bitRate >= 159){
+			return v + String.format("Kpbs Quality is good");
+		}
+		else if (bitRate <= 160 && bitRate >= 191){
+			return w + String.format("Kpbs Quality is ");
+		}
+	}
+}
+
+	private static void Rate() {
+		// TODO Auto-generated method stub
+		
+	}
 	
 	// TODO create a function that returns a string duration in minutes and seconds ( human readable )
 
