@@ -8,6 +8,6 @@ public class Person {
 	
 	private String lastName;
 	public String getLastName() {return lastName;}
-	public void setLastName(String ln) {firstName = ln;}
+	public void setLastName(String ln) {lastName = ln;}
 	
 }

@@ -12,7 +12,7 @@ public class ArraySample {
 		// TODO Auto-generated method stub of elements. 
 		// Array
 		// A collection of like data types
-		// 1.) must initialize / set number (Once set cant change number of elements)
+		// 1.) must initialize / set number (Once set cannot change number of elements)
 		
 		String str1 = "str 1";
 		String str2 = "str 2";
