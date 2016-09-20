@@ -32,7 +32,7 @@ public class RegularExpression {
 		String fnLett = fn.substring(0,1);
 		
 		String username = (fnLett + ln).toLowerCase().trim();
-		String email = username + "@example.org";
+		
 		
 		String patterns = "^[a-z]{1,20}$";
 		
@@ -44,7 +44,9 @@ public class RegularExpression {
 			
 		}
 		
-		System.out.print(username + "@example.org");
+		String email = username + "@example.org";
+		
+		System.out.print(email);
 		
 		in.close();
 	}
