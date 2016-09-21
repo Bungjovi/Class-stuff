@@ -10,10 +10,10 @@ public class RegularExpression {
 		// ^#([0-9a-fA-F]{3}|[0-9a-fA-F]{6})$
 		
 		String pattern = "^#([0-9a-fA-F]{3}|[0-9a-fA-F]{6})$";
-//		String code = "#ffaadd";
-//		
-//		if (code.matches(pattern)){
-//			System.out.println("Valid hexadecimal color code");
+		String code = "#ffaadd";
+		
+		if (code.matches(pattern)){
+			System.out.println("Valid hexadecimal color code");
 		}
 		
 		// Create a username

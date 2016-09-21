@@ -1,6 +1,5 @@
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Random; //Import to use Random generator
 import java.util.Scanner;
 
 
@@ -31,9 +30,9 @@ public class LoopValues {
 			
 		for (Integer i : numbers){
 			total += i;
-			System.out.println(total);
+			
 		}
-		
+		System.out.println("The total is: " + total);
 		in.close();
 		
 
