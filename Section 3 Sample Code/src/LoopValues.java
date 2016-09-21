@@ -26,14 +26,15 @@ public class LoopValues {
 		}
 		
 		while(num > 0);
-			
+	
 		int total = 0;
 			
 		for (Integer i : numbers){
-			total += 1;
+			total += i;
+			System.out.println(total);
 		}
 		
-		
+		in.close();
 		
 
 	}
