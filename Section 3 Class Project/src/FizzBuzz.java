@@ -1,5 +1,4 @@
-import java.util.ArrayList;
-import java.util.List;
+
 import java.util.Scanner;
 
 /*
@@ -31,14 +30,22 @@ public class FizzBuzz {
 	public static Scanner in = new Scanner(System.in);
 	public static void main(String[] args) {
 		
-		int [] array = new int[100];
-		for (int a = 0; a < array.length; a++)
-			array[a] = a + 1;
+		for (int a = 0; a < 100; a++){
+			int number = a + 1;
 		
-		int i = 0;
-		
-		if(i % 3 && i % 5){
-			
+		if((number % 3) == 0 && number % 5 == 0){
+			System.out.println(number + "Fizz/Buzz");
 		}
+		else if((number % 3) == 0){
+			System.out.println(number + " Fizz");
+		}
+		else if((number % 5 == 0)){
+			System.out.println(number + " Buzz");
+		}
+		else{
+			System.out.println(number);
+		}
+		}
+		in.close();
 	}
 }
