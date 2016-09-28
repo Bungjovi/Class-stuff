@@ -9,13 +9,13 @@ public class RegularExpression {
 		// Match a hexadecimal color code
 		// ^#([0-9a-fA-F]{3}|[0-9a-fA-F]{6})$
 		
-		String pattern = "^#([0-9a-fA-F]{3}|[0-9a-fA-F]{6})$";
-		String code = "#ffaadd";
-		
-		if (code.matches(pattern)){
-			System.out.println("Valid hexadecimal color code");
-		}
-		
+//		String pattern = "^#([0-9a-fA-F]{3}|[0-9a-fA-F]{6})$";
+//		String code = "#ffaadd";
+//		
+//		if (code.matches(pattern)){
+//			System.out.println("Valid hexadecimal color code");
+//		}
+//		
 		// Create a username
 		// No Spaces, first letter of first name, entire last name, all lowercase
 		// less than or equal to 20 characters 
@@ -37,7 +37,7 @@ public class RegularExpression {
 		String patterns = "^[a-z]{1,20}$";
 		
 		if(username.matches(patterns)) { // matches the patterns string
-			System.out.print(username + " is valid.");
+			System.out.print(username + " is valid ");
 		}
 		else{ // cuts off the username at 20 characters
 			username = username.substring(0,19);
