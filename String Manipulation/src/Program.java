@@ -42,9 +42,10 @@ public class Program {
 		 * 
 		 * ^- means start with
 		 * $- means ends with
+		 *  . - matches almost everything (except line/carriage returns)
 		 * 
 		 * Quantifiers
-		 * . - means anything else 0 or more
+		 * * - 0 or more
 		 * + - means 1 or more
 		 * {x} - must match x number of times
 		 * {x, y} - must match x - y number of times only (Range match)
