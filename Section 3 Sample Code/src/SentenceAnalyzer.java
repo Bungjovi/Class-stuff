@@ -17,6 +17,16 @@ public class SentenceAnalyzer {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
+		
+		String sentence = " This is a new sentence.";
+		String[] words = sentence.replace(".", "").replace("?", "").split(" ");
+		
+		"^[A-Z]{1}.*[\\.\\?]{1}$"
+		sentence.length();
+		sentence.split(" ");
+		for(String s in splits) {
+			s.replace(".", "").replace("?", "");
+		}
 
 	}
 
