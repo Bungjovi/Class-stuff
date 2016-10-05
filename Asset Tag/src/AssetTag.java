@@ -111,24 +111,55 @@ public class AssetTag {
 	public void setCheckSum(String cs){checkSum = cs;}
 
 	
-	public AssetTag(String track) {
+	
 		
-		 //String[] trk = track.split("\\^");
-		  //%B300012552615478 - 0 - 
+	public AssetTag(String tag) {
+		
+		
+		String patterns = "^#[0-9A-Z]$";
+		
+		 IdNum = tag.substring(0, 7).replace("000000", "");
+		 deviceType = tag.substring(7,10);
+		 buildingLoc = tag.substring(12,14);
+		 roomNo = tag.substring(15, 17);
 		 
-		//String[] x = track.substring(7);
-		 IdNum = x[0].substring(7); 
-		   
-		  
-		  //DUCK/DONALD - 1   
-		 String[] x = trk[1].split("/");
-		 firstName = x[1].trim(); 
-		 lastName = x[0];  
-		             
-		  //1806Z3011225*000378000XXX000142? - 2
-		  expYear = trk[2].substring(0,2); 
-		  expMonth = trk[2].substring(2,4);
-		  
+	
+		 
+		 if(deviceType.matches("CMP")){
+			 deviceType = "Computer";}
+		 else if(deviceType.matches("LPT")){
+			 deviceType = "Laptop";}
+		 else if(deviceType.matches("PRN")){
+			 deviceType = "Printer";}
+		 else if(deviceType.matches("PRJ")){
+			 deviceType = "Projector";}
+		 else if(deviceType.matches("TBT")){
+			 deviceType = "Tablet";}
+		 else if(deviceType.matches("PHN")){
+			 deviceType = "Phone";}
+		 else if(deviceType.matches("OTH")){
+			 deviceType = "Other";}
+			 
+		 if(buildingLoc.matches("SA")){
+			 buildingLoc = "Sauder";}
+		 else if(buildingLoc.matches("DC")){
+			 buildingLoc = "Downtown Campus";}
+		 else if(buildingLoc.matches("WD")){
+			 buildingLoc = "Wleding Bulding";}
+		 else if(buildingLoc.matches("TC")){
+			 buildingLoc = "Technology Building";}
+		 else if(buildingLoc.matches("JE")){
+			 buildingLoc = "Jones Education Center";}
+		 
+		 
+	}
+		
+		 
+	
+		  public void print(){
+				System.out.println("ID: " + getIdNum());
+				System.out.println("");
+				System.out.println("");
 		 
 	}
 	
